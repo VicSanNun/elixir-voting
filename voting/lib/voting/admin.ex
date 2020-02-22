@@ -3,9 +3,9 @@ defmodule Voting.Admin do
   import Ecto.Changeset
 
   schema "administrator" do
-    field :email, :string
-    field :name, :string
-    field :password_hash, :string
+    field :email, :string, null: false
+    field :name, :string, null: false
+    field :password_hash, :string, null: false
 
     timestamps()
   end
